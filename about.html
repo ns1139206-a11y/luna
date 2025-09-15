@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luna Accessories — About</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f97316'/%3E%3Cpath d='M32 14 L36 28 L50 28 L38 36 L42 50 L32 40 L22 50 L26 36 L14 28 L28 28 Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script> 
+
+</head>
+<body>
+  <header class="site-header" style="background:#0E1A2B;color:#fff;">
+    <div class="container header-inner">
+  <div class="brand"><a href="index.html" style="color:#fff;">Luna<span class="dot">.</span></a></div>
+      <nav class="nav">
+  <a href="index.html" class="nav-link" data-key="navHome" style="color:#fff;">Home</a>
+  <a href="about.html" class="nav-link active" data-key="navAbout" style="color:#fff;">About</a>
+  <a href="products.html" class="nav-link" data-key="navProducts" style="color:#fff;">Products</a>
+  <a href="lookbook.html" class="nav-link" data-key="navOffers" style="color:#fff;">Offers</a>
+  <a href="contact.html" class="nav-link" data-key="navContact" style="color:#fff;">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="langToggle" class="btn small">AR</button>
+        <button id="themeToggle" class="btn small">🌙</button>
+            <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+              <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+              <span id="themeText">Dark Mode</span>
+            </button>
+            <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+              <span id="langText">AR</span>
+            </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about">
+      <h1 data-key="aboutTitle">About Luna</h1>
+      <p data-key="aboutLead">Started in 2023, Luna grew from a love for small, meaningful design.</p>
+
+      <div class="columns">
+        <div>
+          <h3 data-key="ourStory">Our Story</h3>
+          <p data-key="storyText">We began making jewelry for friends, then expanded to curated accessories for people who value craftsmanship.</p>
+          <button id="readMoreBtn" class="btn outline small" data-key="readMore">Read more</button>
+          <p id="moreText" class="hidden" data-key="moreText">Our pieces are made in small batches, with attention to materials and sustainability.</p>
+        </div>
+
+        <div>
+          <h3 data-key="mission">Mission</h3>
+          <p data-key="missionText">Design lasting accessories that tell a story.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year2"></span> Luna Accessories</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

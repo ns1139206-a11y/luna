@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Cart — Luna</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="cart-header" style="color:#fff;">
+  <nav style="margin-bottom:1rem;color:#fff;">
+  <a href="index.html" style="color:#fff;">Home</a> | <a href="products.html" style="color:#fff;">Shop</a> | <a href="wishlist.html" style="color:#fff;">Wishlist</a>
+      <span style="float:right;">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+          <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+          <span id="themeText">Dark Mode</span>
+        </button>
+        <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+          <span id="langText">AR</span>
+        </button>
+      </span>
+    </nav>
+    <div class="cart-title">Your Shopping Cart</div>
+  </header>
+  <main class="container py-5" style="background:linear-gradient(90deg,#FAF7F2 60%,#F2E8D8 100%);min-height:60vh;border-radius:18px;box-shadow:0 4px 24px rgba(14,26,43,0.08);">
+    <div id="cart-items" class="cart-items" style="margin-top:2rem;">
+      <div class="cart-empty">Your cart is empty. Add products to buy!</div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

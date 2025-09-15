@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Luna — Offers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" id="bootstrap-css-link" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top" style="background:#FAF7F2;">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Luna</a>
+      <div class="d-flex gap-2 ms-2">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+          <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+          <span id="themeText">Dark Mode</span>
+        </button>
+        <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+          <span id="langText">AR</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <div class="row align-items-center g-3">
+      <div class="col-md-6">
+        <h1 class="h3">Limited-Time Offers</h1>
+        <p class="text-muted">Snag pastel-perfect accessories at sweet prices — flash deals & bundles.</p>
+        <div class="card p-3">
+          <div class="fs-4" id="offerTimer">48:00:00</div>
+          <div class="text-muted small">Next drop ends in</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="assets/product-3.jpg" class="card-img-top" alt="offer">
+          <div class="card-body">
+            <h5 class="card-title">Weekend Bundle</h5>
+            <p class="card-text small">Hoop earrings + chain necklace set.</p>
+            <div class="d-flex gap-2 align-items-center mb-2">
+              <span class="fw-bold">$59</span> <span class="text-muted text-decoration-line-through">$84</span>
+            </div>
+            <a class="btn btn-primary" href="products.html">Grab Deal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="h5 mt-4">More Deals</h3>
+    <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-4" id="offersGrid"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

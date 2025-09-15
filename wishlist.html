@@ -1,0 +1,58 @@
+i<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Wishlist — Luna</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="wishlist-header" style="color:#fff;">
+  <nav style="margin-bottom:1rem;color:#fff;">
+  <a href="index.html" style="color:#fff;">Home</a> | <a href="products.html" style="color:#fff;">Shop</a> | <a href="cart.html" style="color:#fff;">Cart</a>
+      <span style="float:right;">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+          <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+          <span id="themeText">Dark Mode</span>
+        </button>
+        <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+          <span id="langText">AR</span>
+        </button>
+      </span>
+    </nav>
+    <div class="wishlist-title">Your Favorites</div>
+  </header>
+  <main class="container py-5">
+    <h2 class="mb-4" style="color:#0E1A2B;font-weight:700;">Your Wishlist</h2>
+    <div id="wishlist-items"></div>
+    <script>
+    // Make wishlist cards draggable/movable
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.getElementById('wishlist-items');
+      let dragged = null;
+      container.addEventListener('dragstart', function(e) {
+        if (e.target.classList.contains('wishlist-card')) {
+          dragged = e.target;
+          e.dataTransfer.effectAllowed = 'move';
+          setTimeout(()=>{dragged.style.opacity = '0.5';},0);
+        }
+      });
+      container.addEventListener('dragend', function(e) {
+        if (dragged) dragged.style.opacity = '';
+        dragged = null;
+      });
+      container.addEventListener('dragover', function(e) {
+        e.preventDefault();
+      });
+      container.addEventListener('drop', function(e) {
+        e.preventDefault();
+        if (dragged && e.target.classList.contains('wishlist-card') && dragged !== e.target) {
+          container.insertBefore(dragged, e.target.nextSibling);
+        }
+      });
+    });
+    </script>
+  </main>
+  <script src="script.js?v=20250915"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Luna — Accessories Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" id="bootstrap-css-link" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Luna Luxury Promo Banner -->
+  <div class="luna-banner text-white text-center py-2 small fw-medium" style="background:#0E1A2B;">
+    <div class="container">
+      <span class="me-3">✨ FREE DELIVERY on orders over $50</span>
+      <span class="me-3">•</span>
+      <span class="me-3">Easy Returns</span>
+      <span class="me-3">•</span>
+      <span>30% off selected styles</span>
+    </div>
+    <div class="container">
+<a class="navbar-brand fw-bold fs-2" href="index.html" style="color:#0E1A2B;">Luna</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="products.html?cat=new">New In</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              Jewellery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=jewellery">Shop All</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=earrings">Earrings</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=necklaces">Necklaces</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=bracelets">Bracelets</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=rings">Rings</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=charms">Charms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              Accessories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=bags">Bags</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=hair">Hair Accessories</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=scarves">Scarves</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=belts">Belts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="lookbook.html">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium text-danger" href="products.html?cat=sale">Sale</a>
+          </li>
+        </ul
+        
+        <div class="d-flex gap-3 align-items-center">
+          <div class="position-relative">
+            <input type="search" class="form-control form-control-sm" placeholder="Search..." style="width: 200px;">
+          </div>
+          <a href="wishlist.html" class="btn btn-outline-secondary btn-sm position-relative wishlist-heart" aria-label="Wishlist" style="padding:0.375rem 0.75rem;display:flex;align-items:center;">
+            <span aria-hidden="true" style="font-size:1.3em;line-height:1;">♡</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">0</span>
+          </a>
+          <a href="cart.html" class="btn btn-outline-primary btn-sm position-relative cart-icon" aria-label="Cart" style="padding:0.375rem 0.75rem;display:flex;align-items:center;">
+            <span aria-hidden="true" style="display:inline-block;width:1.3em;height:1.3em;vertical-align:middle;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="width:100%;height:100%;"><path d="M0 1a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.8l.3 1.2H15a1 1 0 0 1 .97 1.24l-1.5 6A1 1 0 0 1 13.5 10H4.12l-.3 1.2A1 1 0 0 1 2.84 13H1a1 1 0 0 1-1-1V1zm3.12 9h10.38l1.2-4.8H4.32l-1.2 4.8z"/></svg>
+            </span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">0</span>
+          </a>
+          
+          <div class="d-flex gap-2 ms-2">
+            <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+              <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">
+                🌙
+              </span>
+              <span id="themeText">Dark Mode</span>
+            </button>
+            <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+              <span id="langText">AR</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Cart & Wishlist Bar -->
+<section class="py-3" style="background: #F8F7F4; border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center gap-4">
+          <a href="cart.html" class="d-flex align-items-center text-decoration-none" style="color: #0E1A2B;">
+            <div class="d-flex align-items-center justify-content-center rounded-circle me-2" style="width: 40px; height: 40px; background: #0E1A2B;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.8l.3 1.2H15a1 1 0 0 1 .97 1.24l-1.5 6A1 1 0 0 1 13.5 10H4.12l-.3 1.2A1 1 0 0 1 2.84 13H1a1 1 0 0 1-1-1V1zm3.12 9h10.38l1.2-4.8H4.32l-1.2 4.8z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="fw-bold">Shopping Cart</div>
+              <div class="small text-muted">View your items</div>
+            </div>
+          </a>
+          
+          <a href="wishlist.html" class="d-flex align-items-center text-decoration-none" style="color: #0E1A2B;">
+            <div class="d-flex align-items-center justify-content-center rounded-circle me-2" style="width: 40px; height: 40px; background: #dc3545;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+                <path d="M8 2.748l-.717-.737C5.6.281 2.514 3.042 3.4 6.053c.523 1.78 2.292 3.787 4.6 5.385 2.308-1.598 4.077-3.605 4.6-5.385.886-3.011-2.2-5.772-3.883-2.568L8 2.748z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="fw-bold">Wishlist</div>
+              <div class="small text-muted">Save favorites</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Accessorize-style Hero Section -->
+<section class="hero-section">
+  <!-- Luna Brand Modern Hero -->
+<div class="luna-hero relative overflow-hidden" style="background: linear-gradient(120deg,#FAF7F2 60%,#0E1A2B 100%);">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="luna-hero-copy text-start" style="max-width:480px;">
+          <h1 class="fw-bold mb-3 animated-hero-title" data-i18n="hero-title" style="font-family:'Poppins',sans-serif;font-size:2.8rem;color:#0E1A2B;animation:fadeUp 0.6s cubic-bezier(0.4,0,0.2,1);">Luna Accessories</h1>
+          <p class="lead mb-4 animated-hero-desc" data-i18n="hero-desc" style="font-family:'Inter',sans-serif;color:#151718;animation:fadeUp 0.8s 0.1s cubic-bezier(0.4,0,0.2,1);">Shine in the details.<br>Discover earrings, bracelets, and necklaces for every style.</p>
+          <div class="d-flex gap-3 mb-4">
+            <a href="products.html?cat=new" class="btn btn-primary luna-pill-btn px-4 py-2 animated-hero-btn" style="border-radius:999px;font-weight:600;font-size:1.1rem;background:#0E1A2B;color:#F8F7F4;box-shadow:0 2px 8px rgba(14,26,43,0.08);transition:transform 0.18s;animation:fadeUp 0.9s 0.2s cubic-bezier(0.4,0,0.2,1);">Shop New In</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+        <div class="luna-hero-img">
+          <img src="assets/5pcs_Set High-End Luxury Elegant Cubic Zirconia….jpg" alt="Luxury Cubic Zirconia Set" class="luna-float-img" style="max-width:540px;width:100%;border-radius:18px;box-shadow:0 12px 48px rgba(197,157,95,0.18);aspect-ratio:1/1;object-fit:cover;background:#F2E8D8;">
+        </div>
+      </div>
+    </div>
+    <!-- Soft wave SVG divider -->
+    <div aria-hidden="true" style="position:absolute;bottom:-1px;left:0;width:100%;line-height:0;">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;display:block;"><path fill="#F9FAFB" fill-opacity="1" d="M0,32 C360,120 1080,0 1440,80 L1440,120 L0,120 Z"></path></svg>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Discount & Shipping Bar -->
+<section class="py-4" style="background: linear-gradient(135deg, #0E1A2B 0%, #C59D5F 100%);">
+  <div class="container">
+    <div class="row text-center text-white">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="text-center">
+          <h4 class="mb-1 fw-bold">30% OFF</h4>
+          <p class="mb-0 small">Selected Styles</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="text-center">
+          <h4 class="mb-1 fw-bold">FREE SHIPPING</h4>
+          <p class="mb-0 small">Orders Over $50</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center">
+          <h4 class="mb-1 fw-bold">PREMIUM</h4>
+          <p class="mb-0 small">Quality Guaranteed</p>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Accessorize-style Category Navigation -->
+<section class="container my-5">
+  <div class="row g-4">
+    <!-- Main Categories -->
+    <div class="col-12">
+  <h2 class="text-center mb-4 fw-bold" data-i18n="category-title">Shop by Category</h2>
+    </div
+    
+    <!-- Jewelry Categories -->
+      <div class="col-md-6 col-lg-4">
+        <div class="category-card h-100">
+          <a href="jewelry-collection.html" class="text-decoration-none">
+            <div class="category-image">
+              <img src="assets/jelwery.jpg" class="w-100" alt="Jewelry">
+            </div>
+            <div class="category-content p-3">
+              <h4 class="fw-bold mb-2" data-i18n="jewellery-title">Jewellery</h4>
+              <p class="text-muted small mb-3">Discover our stunning collection of earrings, necklaces, rings, and bracelets</p>
+              <a href="jewelry-collection.html" class="btn btn-outline-primary btn-sm">Shop All</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+    <!-- Bags Categories -->
+    <div class="col-md-6 col-lg-4">
+      <div class="category-card h-100">
+        <a href="bags-collection.html" class="text-decoration-none">
+          <div class="category-image">
+            <img src="assets/bag1.jpg" class="w-100" alt="Bags Cover">
+          </div>
+          <div class="category-content p-3">
+            <h4 class="fw-bold mb-2" data-i18n="bags-title">Bags</h4>
+            <p class="text-muted small mb-3">From crossbody bags to elegant clutches for every occasion</p>
+            <a href="bags-collection.html" class="btn btn-outline-primary btn-sm">Shop All</a>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Accessories Categories -->
+      <div class="col-md-6 col-lg-4">
+        <div class="category-card h-100">
+          <a href="accessories-collection.html" class="text-decoration-none">
+            <div class="category-image">
+              <img src="assets/accessories.jpg" class="w-100" alt="Accessories Cover">
+            </div>
+            <div class="category-content p-3">
+              <h4 class="fw-bold mb-2" data-i18n="accessories-title">Accessories</h4>
+              <p class="text-muted small mb-3">Shop our curated selection of accessories for every style</p>
+              <a href="accessories-collection.html" class="btn btn-outline-primary btn-sm">Shop All</a>
+            </div>
+          </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Category Links -->
+
+
+<!-- Bestsellers -->
+<section class="container my-4">
+  <div class="best-seller-cover d-flex align-items-center" style="min-height:520px;gap:2rem;">
+    <div class="flex-grow-1 text-start best-seller-title bestseller-headline-animate" style="padding:3rem 2rem;display:flex;align-items:center;">
+      <div class="bestseller-headline" style="width:100%">
+        <h2 class="display-2 fw-bold text-primary" style="margin-bottom:0;letter-spacing:0.1em;">Bestsellers</h2>
+      </div>
+    </div>
+    <div class="best-seller-img best-seller-img-animate" style="max-width:900px;width:80%;">
+      <img src="assets/best-seller.jpg" alt="Best Seller Cover" style="width:100%;max-height:620px;min-height:400px;object-fit:cover;border-radius:32px;box-shadow:0 24px 64px rgba(0,0,0,0.18);">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <!-- Arrows removed -->
+  </div>
+  <div class="row g-3 row-cols-2 row-cols-md-4" id="shelf-best">
+    <!-- Bestseller Product Cards -->
+    
+    <div class="col">
+      <div class="card h-100 text-center p-3 bag-card">
+        <img src="assets/bag10.jpg" alt="Elegant Clutch" class="img-fluid rounded mb-2">
+        <h5 class="mb-1">Elegant Clutch</h5>
+        <p class="text-muted small">A refined clutch for evening events, featuring a metallic finish</p>
+        <div class="mb-2 bag-price">$27</div>
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/bag10.jpg">♡</button>
+          <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/bag10.jpg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center p-3 bag-card">
+        <img src="assets/jewelry 2.jpg" alt="Silver Earrings" class="img-fluid rounded mb-2">
+        <h5 class="mb-1">Silver Earrings</h5>
+        <p class="text-muted small">Elegant silver earrings for a chic and versatile look</p>
+        <div class="mb-2 bag-price">$16</div>
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/jewelry 2.jpg">♡</button>
+          <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/jewelry 2.jpg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center p-3 bag-card">
+        <img src="assets/access11.jpg" alt="Chain Handle Bag" class="img-fluid rounded mb-2">
+        <h5 class="mb-1">Chain Handle Bag</h5>
+        <p class="text-muted small">Structured bag with elegant chain handle and roomy interior</p>
+        <div class="mb-2 bag-price">$69</div>
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/access11.jpg">♡</button>
+          <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/access11.jpg">Add to Cart</button>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<!-- New In -->
+<section class="container my-4">
+  <div class="new-in-wrapper p-4 bg-white rounded-4 shadow-sm">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <div class="new-in-title"><h2 class="h4 m-0" data-i18n="navNewIn">New In</h2></div>
+    </div>
+    <a href="products.html?cat=new" class="btn btn-primary luna-pill-btn mb-3" style="border-radius:999px;font-weight:600;font-size:1.1rem;background:#0E1A2B;color:#F8F7F4;box-shadow:0 2px 8px rgba(14,26,43,0.08);transition:transform 0.18s;">Shop All New In</a>
+    <a href="products.html?cat=accessories" class="btn btn-outline-primary luna-pill-btn mb-3 ms-2" style="border-radius:999px;font-weight:600;font-size:1.1rem;border:2px solid #C59D5F;color:#C59D5F;background:#fff;box-shadow:0 2px 8px rgba(197,157,95,0.08);transition:transform 0.18s;">Shop Accessories</a>
+  </div>
+</section>
+
+<!-- Accessorize-style Newsletter -->
+<section class="bg-light py-5 mt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h3 class="h4 fw-bold mb-3" data-i18n="nlTitle">Join the Luna List</h3>
+        <p class="text-muted mb-4" data-i18n="nlDesc">Enjoy 15% off* your first order when you sign up to our newsletter</p>
+        <p class="small text-muted mb-4">By joining I agree to the Treats T&C and am happy to receive marketing emails as well as emails about my Treats membership. Unsubscribe at any time using the link in our emails or by contacting us.</p>
+        
+        <form id="nlForm" class="d-flex justify-content-center gap-2 flex-wrap">
+          <div class="position-relative" style="max-width: 400px;">
+            <input type="email" class="form-control form-control-lg" placeholder="Your email address" required>
+            <button class="btn btn-primary btn-lg px-4" data-i18n="subscribe">SIGN UP!</button>
+          </div>
+        </form>
+        
+        <div class="mt-4">
+          <p class="small text-muted">*Terms and conditions apply. Valid for new subscribers only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Accessorize-style Footer -->
+<footer class="border-top py-5 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Delivery & Return -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Delivery & Return</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Check Order</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">International Delivery</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      
+      <!-- Customer Services -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Customer Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Terms & Policies</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Stores & Opening Hours</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Size Guides</a></li>
+        </ul>
+      </div>
+      
+      <!-- About -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">About</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">Our Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Sustainability</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Charity</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Corporate Responsibility</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Careers</a></li>
+        </ul>
+      </div>
+      
+      <!-- Store Locator & Social -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Connect</h5>
+        <div class="mb-3">
+          <a href="#" class="text-decoration-none text-muted me-3">Store Locator</a>
+        </div>
+        
+        <div class="mb-3">
+          <span class="text-muted small">Shipping country</span>
+          <select class="form-select form-select-sm mt-1" style="max-width:200px">
+            <option>US / $</option>
+            <option>UK / £</option>
+            <option>EU / €</option>
+          </select>
+        </div>
+        
+        <div class="d-flex gap-2 mb-3">
+          <a href="#" class="text-decoration-none text-muted">Facebook</a>
+          <a href="#" class="text-decoration-none text-muted">Instagram</a>
+          <a href="#" class="text-decoration-none text-muted">Pinterest</a>
+          <a href="#" class="text-decoration-none text-muted">Youtube</a>
+        </div>
+        
+        <div class="text-muted small">
+          © 2025 LUNA BRANDS LTD. All rights reserved
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button id="scrollToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" style="width: 50px; height: 50px; z-index: 1000; display: none;">
+  ↑
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

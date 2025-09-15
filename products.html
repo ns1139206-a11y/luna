@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Luna — Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" id="bootstrap-css-link" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top" style="background:#FAF7F2;">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Luna</a>
+      <div class="d-flex gap-2 ms-2">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+          <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+          <span id="themeText">Dark Mode</span>
+        </button>
+        <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+          <span id="langText">AR</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-3">
+    <ul class="nav nav-pills gap-2 flex-wrap mb-3">
+  <li class="nav-item"><button class="nav-link active tab" data-filter="all" style="background:#0E1A2B;color:#fff;">All</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="earrings" style="color:#fff;">Earrings</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="bracelets" style="color:#fff;">Bracelets</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="necklaces" style="color:#fff;">Necklaces</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="rings" style="color:#fff;">Rings</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="sets" style="color:#fff;">Sets</button></li>
+  <li class="nav-item"><button class="nav-link tab" data-filter="charms" style="color:#fff;">Charms</button></li>
+    </ul>
+    <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-4" id="productsGrid"></div>
+  </main>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" style="width: 50px; height: 50px; z-index: 1000; display: none;">
+    ↑
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

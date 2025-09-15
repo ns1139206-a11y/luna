@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewellery Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Luna Luxury Promo Banner -->
+  <div class="luna-banner text-white text-center py-2 small fw-medium" style="background:#0E1A2B;">
+    <div class="container">
+      <span class="me-3">✨ FREE DELIVERY on orders over $50</span>
+      <span class="me-3">•</span>
+      <span class="me-3">Easy Returns</span>
+      <span class="me-3">•</span>
+      <span>30% off selected styles</span>
+    </div>
+  </div>
+  <header class="border-bottom sticky-top" style="background:#FAF7F2;">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand fw-bold fs-2" href="index.html" style="color:#fff;font-family:'Poppins',sans-serif;letter-spacing:0.05em;text-shadow:0 2px 8px rgba(14,26,43,0.08);">Luna</a>
+        <div class="d-flex gap-2 ms-2">
+          <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+            <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+            <span id="themeText">Dark Mode</span>
+          </button>
+          <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+            <span id="langText">AR</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="wishlist.html">
+              <span style="display:inline-block;width:1.3em;height:1.3em;vertical-align:middle;margin-right:6px;color:#dc3545;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#dc3545" viewBox="0 0 16 16" style="width:100%;height:100%;"><path d="M8 2.748l-.717-.737C5.6.281 2.514 3.042 3.4 6.053c.523 1.78 2.292 3.787 4.6 5.385 2.308-1.598 4.077-3.605 4.6-5.385.886-3.011-2.2-5.772-3.883-2.568L8 2.748z"/></svg>
+              </span>
+              Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="cart.html">
+              <span style="display:inline-block;width:1.3em;height:1.3em;vertical-align:middle;margin-right:6px;color:#22304a;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#22304a" viewBox="0 0 16 16" style="width:100%;height:100%;"><path d="M0 1a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.8l.3 1.2H15a1 1 0 0 1 .97 1.24l-1.5 6A1 1 0 0 1 13.5 10H4.12l-.3 1.2A1 1 0 0 1 2.84 13H1a1 1 0 0 1-1-1V1zm3.12 9h10.38l1.2-4.8H4.32l-1.2 4.8z"/></svg>
+              </span>
+              Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">Jewellery Collection</h1>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/1ff9a505-d48b-4ffe-bac1-9e818aecb506.jpg" alt="Jewelry A" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Soft pastel tones and delicate design for everyday elegance.</p>
+          <div class="mb-2 bag-price">$12</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/1ff9a505-d48b-4ffe-bac1-9e818aecb506.jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/1ff9a505-d48b-4ffe-bac1-9e818aecb506.jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/5pcs_Set High-End Luxury Elegant Cubic Zirconia….jpg" alt="Jewelry B" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">High-end cubic zirconia set for a sparkling statement look.</p>
+          <div class="mb-2 bag-price">$16</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/5pcs_Set High-End Luxury Elegant Cubic Zirconia….jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/5pcs_Set High-End Luxury Elegant Cubic Zirconia….jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/6cf2b8df-67ce-44b8-a092-8e9a1a74468d.jpg" alt="Jewelry C" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Graceful necklace with a timeless silhouette for any occasion.</p>
+          <div class="mb-2 bag-price">$18</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/6cf2b8df-67ce-44b8-a092-8e9a1a74468d.jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/6cf2b8df-67ce-44b8-a092-8e9a1a74468d.jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/jewelry9.jpg" alt="Jewelry D" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Classic silver bracelet with a modern twist, perfect for layering.</p>
+          <div class="mb-2 bag-price">$22</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/jewelry9.jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/jewelry9.jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/Victoria-Transvaal Diamond Necklace_ Museum of….jpg" alt="Jewelry E" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Stunning diamond necklace for a luxurious finishing touch.</p>
+          <div class="mb-2 bag-price">$44</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/Victoria-Transvaal Diamond Necklace_ Museum of….jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/Victoria-Transvaal Diamond Necklace_ Museum of….jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/jewelry3.jpg" alt="Jewelry F" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Trendy ring with intricate details to elevate your style.</p>
+          <div class="mb-2 bag-price">$28</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/jewelry3.jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/jewelry3.jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 text-center p-3">
+          <img src="assets/jewelry 2.jpg" alt="Jewelry G" class="img-fluid rounded mb-2">
+          <h5 class="mb-1">Jewelry</h5>
+          <p class="text-muted small">Elegant silver earrings for a chic and versatile look.</p>
+          <div class="mb-2 bag-price">$16</div>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-secondary wishlist-btn" style="color:#dc3545" data-img="assets/jewelry 2.jpg">♡</button>
+            <button class="btn btn-primary add-to-bag-btn" style="background:#0E1A2B" data-img="assets/jewelry 2.jpg">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Heart icon logic
+    var wishlist = JSON.parse(localStorage.getItem('luna_wishlist') || '[]');
+    document.querySelectorAll('.wishlist-btn').forEach(function(btn) {
+      var img = btn.getAttribute('data-img');
+      if (wishlist.includes(img)) {
+        btn.textContent = '♥';
+        btn.style.color = '#dc3545';
+      } else {
+        btn.textContent = '♡';
+        btn.style.color = '';
+      }
+      btn.onclick = function() {
+        var wishlist = JSON.parse(localStorage.getItem('luna_wishlist') || '[]');
+        if (!wishlist.includes(img)) {
+          wishlist.push(img);
+          btn.textContent = '♥';
+          btn.style.color = '#dc3545';
+        } else {
+          wishlist = wishlist.filter(function(i) { return i !== img; });
+          btn.textContent = '♡';
+          btn.style.color = '';
+        }
+        localStorage.setItem('luna_wishlist', JSON.stringify(wishlist));
+      };
+    });
+    // Add to Cart logic
+    document.querySelectorAll('.add-to-bag-btn').forEach(function(btn) {
+      var img = btn.getAttribute('data-img');
+      btn.onclick = function() {
+        var cart = JSON.parse(localStorage.getItem('luna_cart') || '[]');
+        if (!cart.includes(img)) {
+          cart.push(img);
+          localStorage.setItem('luna_cart', JSON.stringify(cart));
+          btn.textContent = 'Added!';
+          btn.style.backgroundColor = '#28a745';
+          btn.style.color = 'white';
+          setTimeout(function() {
+            btn.textContent = 'Add to Cart';
+            btn.style.backgroundColor = '#0E1A2B';
+            btn.style.color = '';
+          }, 1200);
+        }
+      };
+    });
+  });
+  </script>
+</body>
+</html>

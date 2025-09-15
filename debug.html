@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Debug — Luna</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body{font-family:Inter,system-ui,Arial;margin:24px}
+    pre{background:#f6f7fb;padding:12px;border-radius:8px}
+    .box{margin-bottom:16px}
+  </style>
+</head>
+<body>
+  <header style="margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;">
+    <h1>LocalStorage Debug</h1>
+    <div>
+      <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+        <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+        <span id="themeText">Dark Mode</span>
+      </button>
+      <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+        <span id="langText">AR</span>
+      </button>
+    </div>
+  </header>
+  <div class="box">
+    <h3>wishlist (luna_wishlist)</h3>
+    <pre id="ls-wishlist">(loading...)</pre>
+  </div>
+  <div class="box">
+    <h3>cart (luna_cart)</h3>
+    <pre id="ls-cart">(loading...)</pre>
+  </div>
+  <div class="box">
+    <button id="refresh">Refresh</button>
+    <button id="clear">Clear Both</button>
+  </div>
+  <script>
+    function read() {
+      document.getElementById('ls-wishlist').textContent = localStorage.getItem('luna_wishlist') || '[]';
+      document.getElementById('ls-cart').textContent = localStorage.getItem('luna_cart') || '[]';
+    }
+    document.getElementById('refresh').onclick = read;
+    document.getElementById('clear').onclick = function(){ localStorage.removeItem('luna_wishlist'); localStorage.removeItem('luna_cart'); read(); };
+    read();
+  </script>
+</body>
+</html>

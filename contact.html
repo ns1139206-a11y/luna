@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luna Accessories — Contact</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f97316'/%3E%3Cpath d='M32 14 L36 28 L50 28 L38 36 L42 50 L32 40 L22 50 L26 36 L14 28 L28 28 Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" style="background:#FAF7F2;">
+    <div class="container header-inner">
+  <div class="brand"><a href="index.html" style="color:#0E1A2B;">Luna<span class="dot">.</span></a></div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link" data-key="navHome">Home</a>
+        <a href="about.html" class="nav-link" data-key="navAbout">About</a>
+        <a href="products.html" class="nav-link" data-key="navProducts">Products</a>
+        <a href="lookbook.html" class="nav-link" data-key="navOffers">Offers</a>
+        <a href="contact.html" class="nav-link active" data-key="navContact">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" title="Toggle Light/Dark Mode">
+          <span id="themeIcon" style="vertical-align:middle;display:inline-block;margin-right:6px;">🌙</span>
+          <span id="themeText">Dark Mode</span>
+        </button>
+        <button id="langToggle" class="btn btn-outline-secondary btn-sm" title="Switch Language">
+          <span id="langText">AR</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 data-key="contactTitle">Contact</h1>
+    <p data-key="contactLead">Questions, custom orders, or wholesale — send a message.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label><span data-key="nameLabel">Name</span>
+        <input type="text" id="name" class="input" />
+      </label>
+      <label><span data-key="emailLabel">Email</span>
+        <input type="email" id="email" class="input" />
+      </label>
+      <label><span data-key="messageLabel">Message</span>
+        <textarea id="message" rows="5" class="input"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn primary" id="sendBtn" data-key="send">Send</button>
+        <button type="button" class="btn outline" id="copyEmailContact" data-key="copyEmail">Copy email</button>
+      </div>
+
+      <div id="formError" class="form-error hidden"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year5"></span> Luna Accessories</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
